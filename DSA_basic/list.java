@@ -32,6 +32,11 @@ class Main{
 
         System.out.println("List2: "+list2);
         list2.clear();
+        System.out.println(list2.size());
+
+        // traverse  list using iterator
+        Iterator<Integer> iterator = list.iterator();
+    
 
     }
 }
