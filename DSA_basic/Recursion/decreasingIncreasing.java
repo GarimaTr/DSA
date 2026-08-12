@@ -16,5 +16,4 @@ public class decreasingIncreasing {
       print(n-1);
       System.out.println(n+" ");
 }
-
 }
