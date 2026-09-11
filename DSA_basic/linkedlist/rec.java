@@ -1,18 +1,15 @@
- public class ch1 {
-    static class Node{
+public  class rec{
+    class Node{
     int val;
     Node next;
     Node(int val){
-      this.val=val;
+    this.val=val;
     }
- }
- public static void display(Node head) {
-   Node temp=head;
-   while(temp!=null){
-      System.out.println(temp.val+" ");
-      temp=temp.next;
-   }  
- }
+    }
+    public class displayRec(Node head){
+        System.out.println(head+" ");
+        displayRec(head.next);
+    }
      public static void main(String args[]){
         Node a = new Node(10); 
         Node b =new Node(20); 
@@ -26,4 +23,4 @@
         d.next=e;
         display(a);
      } 
-}
+ } 
