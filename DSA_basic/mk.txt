@@ -1,0 +1,12 @@
+int n=a.length+b.length;
+new int c[]=new int [n];
+for(int i=0;i<n;i++){
+    if(i<a.length){
+        c[i]=a[i];
+    }
+    else
+    {
+        c[i]=b[a.length];
+    }
+    array.sort(c);
+}
