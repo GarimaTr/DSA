@@ -18,7 +18,7 @@ class Linkedlist{
         }
         size++;
         }
-      void display(){
+    void display(){
         if(head == null) return;
         Node temp= head;
         while(temp!=null){
@@ -27,7 +27,7 @@ class Linkedlist{
         }
         System.out.println();
       }
-      void addAtHead(int val){
+    void addAtHead(int val){
         Node temp=new Node(val);
         if(tail==null) head=tail=temp;
         else{
@@ -36,7 +36,7 @@ class Linkedlist{
         }
         size++;
        }
-       void deleteAtHead()
+    void deleteAtHead()
        {
         if(head==null){
             System.out.println("List is empty");
