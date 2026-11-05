@@ -13,14 +13,23 @@ public class PushAtBottom {
         System.out.println(st);
         pushAtBottom(st,ele);
         System.out.println(st);
+        reverse(st);
+         System.out.println(st);
+
+    }
+    static void reverse(Stack<Integer> st){
+        if(st.size()<=1) return;
+        int top=st.pop();
+        reverse(st);
+        pushAtBottom(st, top);
     }
     static void pushAtBottom(Stack<Integer> st, int ele){
-        if(st.isEmpty()){
+        if(st.isEmpty()){  
             st.push(ele);
             return;
         }
         int top=st.pop();
         pushAtBottom(st,ele);
-        st.push(top);    
+        st.push(top);     
     }
 }
